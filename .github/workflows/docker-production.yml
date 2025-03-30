@@ -2,7 +2,7 @@ name: Docker Image Production
 
 on:
   push:
-    branches: ["main"]
+    branches: [ "main" ]
 
 jobs:
   build:
@@ -10,7 +10,8 @@ jobs:
     permissions: write-all
     
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
@@ -33,6 +34,6 @@ jobs:
           push: true
           platforms: linux/amd64,linux/arm64
           tags: |
-            ${{ secrets.DOCKER_USERNAME }}/472-cicd:latest
+            ${{ secrets.DOCKER_USERNAME }}/your-docker-image-name:latest
           build-args: |
             NEXT_PUBLIC_STUDENT_ID=6510405482

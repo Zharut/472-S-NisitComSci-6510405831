@@ -24,20 +24,19 @@ jobs:
         run: npm ci
 
       - name: Run Tests
-        run: |
-          npm test
+        run: npm test
 
       # Set up Docker Buildx
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
       
-      # Build Docker image with BuildX (without pushing)
+      # Build Docker image with BuildX (โดยไม่ push)
       - name: Build Docker image with BuildX
         uses: docker/build-push-action@v5
         with:
           context: .
           push: false
           platforms: linux/amd64,linux/arm64
-          tags: 472-cicd:develop
+          tags: your-docker-image-name:develop
           cache-from: type=gha
           cache-to: type=gha,mode=max
