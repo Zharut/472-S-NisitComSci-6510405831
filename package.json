@@ -1,4 +1,9 @@
 {
+  "name": "472-c-nisitcomsci-6510405831",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "jest"
+  },
   "dependencies": {
     "@prisma/client": "^6.5.0",
     "@remix-run/react": "^2.16.2",
