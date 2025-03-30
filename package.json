@@ -11,7 +11,7 @@
     "@remix-run/react": "^2.16.2",
     "elysia": "^1.2.25",
     "react-router": "^7.4.0",
-    "react-router-dom": "^7.4.0",
+    "react-router-dom": "^7.4.1",
     "resend": "^4.1.2"
   },
   "devDependencies": {
