@@ -1,12 +1,17 @@
 {
   "dependencies": {
+    "@prisma/client": "^6.5.0",
     "@remix-run/react": "^2.16.2",
+    "elysia": "^1.2.25",
     "react-router": "^7.4.0",
     "react-router-dom": "^7.4.0",
     "resend": "^4.1.2"
   },
   "devDependencies": {
+    "@types/jest": "^29.5.14",
     "@types/react": "^19.0.10",
-    "@types/react-router-dom": "^5.3.3"
+    "@types/react-router-dom": "^5.3.3",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.3.0"
   }
 }
