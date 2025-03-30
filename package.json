@@ -2,7 +2,8 @@
   "name": "472-c-nisitcomsci-6510405831",
   "version": "1.0.0",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "tsc"
   },
   "dependencies": {
     "@prisma/client": "^6.5.0",
